@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    
-    printf("Hello World\n");
-    
+    // printing Hello World
+    printf("Hello World");
     return 0;
 }
