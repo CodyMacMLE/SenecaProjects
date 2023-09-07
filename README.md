@@ -1,0 +1,2 @@
+# SenecaProjects
+ School workshop projects
