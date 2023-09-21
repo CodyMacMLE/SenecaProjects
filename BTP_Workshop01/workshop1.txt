@@ -1,0 +1,8 @@
+Inputing char or string in declared int-type
+
+When initializing the variable manually (int variable1 = c;), I put the value in myself with no scanf() 
+present in the code, the compiler outputs an error of "undeclared indentifier". However, when using scanf(); 
+the code runs with whatever value was stored before the scanf() function was called. If I initiated the two 
+variables to have 5 and 10 respectively, the program will run using those values instead of the char/string 
+I inputed into the scanf() function afterwards. If I did not manually input values in the code before scanf(), then it 
+would use the values that the compiler set when the variable was declared.
