@@ -1,0 +1,8 @@
+It is more readable to have a 'switch case' function when you have one variable that has multiple values with a unique outcome over using an 
+if/else statement. An example is if I wanted to decode/encode letters in the alphabet. My variable 'letter' has multiple unique values, the
+letters from a-z and A-Z. I would have a total of 52 case statements with a unique calculation to covert them into my coded message or vice versa.
+An if/else statement would also be able to accomplish this decode/encode, however,like stated above it is harder to read with multipl else/if statements. 
+Although, unlike the switch statement an if/else statement can compare two or more seperate variables.
+
+For this workshop the if/else statments make more sense to me as I have learned about them in the past with python. Howver, if there is a chance to use 
+switch statements. I would implement it into coding because of the fact that it is more readable.

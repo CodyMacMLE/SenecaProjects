@@ -1,0 +1,15 @@
+Reflection 05 - Cody MacDonald
+
+How would I allow the user to input a student id rather than an index 
+within the editing or printing a student function?
+
+Firstly, you could use another function to not over complicate the main 
+function. This new function would take the "ID" input of the user and 
+iterate through the BTP100.id member variable of the array with a for 
+loop initiated at 0. An if statement would be nested inside to check if 
+an exact match is found and breaks. The function should return the index 
+that the loop was at which would equal the index of the array at the time 
+it found the matching "ID". If it did not match in that iteration the for
+loop would add one to the index variable and look in the next index of the array.
+
+We can now use that new variable within the BTP100[variable] array to find the index.

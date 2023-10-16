@@ -1,17 +1,13 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "lldb",
-            "request": "launch",
-            "name": "Launch",
-            "program": "${workspaceFolder}/<program>",
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        }
-
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/codymacdonald/Documents/GitHub/SenecaProjects",
+      "program": "/Users/codymacdonald/Documents/GitHub/SenecaProjects/build/Debug/outDebug"
+    }
+  ]
 }

@@ -1,0 +1,19 @@
+Workshop 04 - Cody MacDonald
+
+To start the program/impliment the loop I have used a do while loop. I chose
+This loop will allow the code to infinity run as long as it does not meet the
+condition I have designated, in this case 'x'. I needed the code in the while
+loop to run once before checking if the condition was met as it was checking 
+for user input. Hence the decision to use the do while loop over the while loop
+which checks the condition first.
+
+Secondly, I used a switch case statement to check the user input from the 'menu'.
+I chose the switch statement as I only have one variable that needs to be checked,
+with multiple values (cases). The default case was used to check if the user inputted
+a none designated character and would give an error message. Another note is that I 
+added a case with continue for the character 'x', the exit character, so that when x 
+was inputted it would not reach the default case and print the error message.
+
+To create the counting loops, I used a for loop as I can designate the number of times
+I want the loop to run by setting an index and a condition linked to that index as well 
+as how I want the index to increment. ie i++ increasing by 1 or i-- decreasing by 1.

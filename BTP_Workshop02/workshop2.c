@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Workshop 02 - Cody MacDonald
+
 int main() {
     int heightFeet, heightInches, heightMeters, heightCentimeters;
     float totalHeightCentimeters;
