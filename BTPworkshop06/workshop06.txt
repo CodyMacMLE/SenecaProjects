@@ -1,0 +1,10 @@
+There are multiple reasons why pointers are not used in other coding languages yet being a powerful tool. 
+One of the significant reasons I beleieve they are not used is due to the risks that come along with their power.
+For instance, if a pointer is pointing to an address that has become deallocated it becomes a Dangling pointer.
+That means if the program later reallocates that address with another variable we can expect unknown results, since that
+variable can be accessed unbeknownst to the programmer from that dangling pointer. It is also possible to exceed the
+allocated byte length of that address, hence if I have a character array of length 10, I can use the pointer to exceed that into
+the next memory address that may be in use for another variable causing crashes. Pointers also can input values that are not of
+the type of the orginal use of that variable. I can point to an address that has a int character type and I can input a float
+which may cause unexpected results. All of these in combination can lead to security risks as "hackers" use these types of 
+vulnerabilities to get code to act differently and access information that normally should not be accessed.
