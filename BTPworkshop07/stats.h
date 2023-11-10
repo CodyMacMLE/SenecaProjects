@@ -15,10 +15,10 @@ struct stats{
  * and an array size of type integer
  * 
 */
-float get_max(float array[], int size);
-float get_min(float array[], int size);
-float get_mean(float array[], int size);
-float get_std(float array[], int size);
-float get_stats(float array[], int size);
+float get_max(float * array, int size);
+float get_min(float * array, int size);
+float get_mean(float * array, int size);
+float get_std(float * array, int size);
+struct stats get_stats(float * array, int size);
 
 #endif

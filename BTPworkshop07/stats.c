@@ -2,7 +2,7 @@
 #include <math.h>
 #include "stats.h"
 
-float get_max(float array[], int size){
+float get_max(float *array, int size){
   float max = array[0];
   for (size_t i = 1; i < size; i++)
   {
@@ -13,7 +13,7 @@ float get_max(float array[], int size){
   return max;
 }
 
-float get_min(float array[], int size){
+float get_min(float *array, int size){
   float min = array[0];
   for (size_t i = 1; i < size; i++)
   {
@@ -24,18 +24,19 @@ float get_min(float array[], int size){
   return min;
 }
 
-float get_mean(float array[], int size){
+float get_mean(float *array, int size){
+  float sum;
   float mean;
-  for (size_t i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
   {
-    mean += array[i];
+    sum += array[i];
   }
-  mean /= size;
+  mean = sum/size;
   
   return mean;
 }
 
-float get_std(float array[], int size){
+float get_std(float *array, int size){
   float std;
   float summation;
   float mean = get_mean(array, size);
@@ -48,10 +49,13 @@ float get_std(float array[], int size){
   return std;
 }
 
-struct stats get_stats(float array[], int size){
+struct stats get_stats(float *array, int size){
+  struct stats temp;
   size = size;
-  max = get_max(array, size);
-  min = get_min(array, size);
-  mean = get_mean(array, size);
-  std = get_std(array, size);
+  temp.max = get_max(array, size);
+  temp.min = get_min(array, size);
+  temp.mean = get_mean(array, size);
+  temp.std = get_std(array, size);
+
+  return temp;
 }
