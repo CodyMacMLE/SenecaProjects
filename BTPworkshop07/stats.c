@@ -2,6 +2,8 @@
 #include <math.h>
 #include "stats.h"
 
+// Workshop 07 – Cody MacDonald
+
 float get_max(float *array, int size){
   float max = array[0];
   for (size_t i = 1; i < size; i++)
@@ -25,8 +27,8 @@ float get_min(float *array, int size){
 }
 
 float get_mean(float *array, int size){
-  float sum;
-  float mean;
+  float sum = 0;
+  float mean = 0;
   for (int i = 0; i < size; i++)
   {
     sum += array[i];
@@ -37,8 +39,8 @@ float get_mean(float *array, int size){
 }
 
 float get_std(float *array, int size){
-  float std;
-  float summation;
+  float std = 0;
+  float summation = 0;
   float mean = get_mean(array, size);
   for (size_t i = 0; i < size; i++)
   {

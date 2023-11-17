@@ -2,6 +2,8 @@
 #define STATS_H
 #define SIZE 8
 
+// Workshop 07 – Cody MacDonald
+
 struct stats{
   int size;
   float max;
