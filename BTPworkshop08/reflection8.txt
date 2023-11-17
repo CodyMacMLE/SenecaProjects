@@ -1,0 +1,10 @@
+Question:
+Can a computer really generate a random number? If so, explain how. 
+If not, explain what computers can do instead to simulate randomness.
+
+Answer:
+A computer can not generate random numbers. To simulate randomness the computer uses
+mathematical sequences to generate a pseudorandom number based off of a starting number(seed).
+However, if the seed is defaulted or if we run the sequence with the same seed. We will recieve
+the same sequence of "random numbers". Programmers work around this by iterating through seeds, 
+or by using the datetime as a seed which is ever changing.
