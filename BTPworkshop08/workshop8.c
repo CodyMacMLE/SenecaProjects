@@ -66,8 +66,7 @@ int main()
 
 int randomIndex(int indexMax)
 {
-    time_t seed = time(NULL); // Grabbing current time
-    srand(seed); // Creating a random seed based on the time
+    srand(time(NULL)); // Creating a random seed based on the time
     int index = rand() % indexMax; // Calling a random int with a range of 0 - 7
     return index; // return index from answers array
 }
@@ -95,7 +94,8 @@ void printLog(char(*questionLog)[64], char(*answerLog)[64], int logIndex)
 
 void fortuneAccuracy()
 {
-    int percentage;
-    percentage = randomIndex(10) + 90;
-    printf("The fortunes accuracy are %d%% accurate\n", percentage);
+    float percentage;
+    srand(time(NULL));
+    percentage = (rand()%11)+90;
+    printf("The fortunes accuracy are %6.2f%% accurate\n", percentage);
 }
