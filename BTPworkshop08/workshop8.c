@@ -3,6 +3,8 @@
 #include <time.h>
 #include <string.h>
 
+// Adding a comment from an issue branch
+
 // Workshop 08 - Cody MacDonald
 
 const char answers[8][64] = {
@@ -56,11 +58,19 @@ int main()
             flag = 0;
         }
     }
-    printf("-------------------------------------\n");
-    fortuneAccuracy();
-    printLog(questionLog, answerLog, logIndex); //Printing log
-    printf("-------------------------------------\n");
-    printf("Exiting Program");
+    if (logIndex)
+    {
+        printf("-------------------------------------\n");
+        fortuneAccuracy();
+        printLog(questionLog, answerLog, logIndex); //Printing log
+        printf("-------------------------------------\n");
+    }
+    else
+    {
+        printf("-------------------------------------\n");
+        printf("No questions were submitted\n");
+        printf("-------------------------------------\n");
+    }
     return 0;
 }
 
@@ -79,7 +89,7 @@ void printRandomAnswer(int index)
 void storeLog(char(*questionLog)[64], char(*answerLog)[64], int logIndex, char tempQuestion[64], int tempAnswerIndex)
 {
     strcpy(questionLog[logIndex], tempQuestion); // storing tempQuestion into log
-    strcpy(answerLog[logIndex], answers[tempAnswerIndex]); // storing tempanswer into log
+    strcpy(answerLog[logIndex], answers[tempAnswerIndex]); // storing tempAnswer into log
 }
 
 void printLog(char(*questionLog)[64], char(*answerLog)[64], int logIndex)
